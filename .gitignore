@@ -1,34 +1,59 @@
 # Python
 __pycache__/
 *.py[cod]
+*$py.class
 *.pyo
 *.pyd
+*.so
 .Python
 .pytest_cache/
 .ruff_cache/
 .mypy_cache/
-.venv/
-venv/
-env/
-
-# Node / frontend
-node_modules/
-dist/
+.pyre/
+.pytype/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+.cache/
+.hypothesis/
+*.egg-info/
+.eggs/
+*.egg
 build/
-coverage/
-*.tsbuildinfo
+dist/
+wheels/
+*.spec
 
-# Environment and secrets
+# Virtual environments
 .env
 .env.*
 !.env.example
+.envrc
+.venv/
+venv/
+env/
+ENV/
+__pypackages__/
+
+# Secrets
 *.pem
 *.key
+.pypirc
+.streamlit/secrets.toml
+
+# Node / frontend
+node_modules/
+coverage/
+*.tsbuildinfo
 
 # Databases and generated data
 *.db
 *.sqlite
 *.sqlite3
+db.sqlite3
+db.sqlite3-journal
 backend/data/uploads/
 backend/data/processed/
 backend/data/temp/
@@ -37,9 +62,9 @@ backend/data/*.db
 data/*.db
 
 # Large local datasets
-企业数据/
-图纸/
-样例/
+????/
+??/
+??/
 
 # Logs and runtime files
 *.log
@@ -48,12 +73,30 @@ tmp/
 temp/
 tmp_*.py
 *_test_*.py
+tempCodeRunnerFile.py
+celerybeat-schedule
+celerybeat.pid
+*.rdb
+*.aof
+*.pid
 
-# OS / editor
-.DS_Store
-Thumbs.db
+# Documentation/build artifacts
+docs/_build/
+/site
+target/
+
+# Jupyter / IDE
+.ipynb_checkpoints/
+.spyderproject
+.spyproject
+.ropeproject
 .idea/
 .vscode/
 
+# OS files
+.DS_Store
+Thumbs.db
+
 # Local agent metadata
 .omc/
+.abstra/
