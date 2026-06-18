@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+env/
+
+# Node / frontend
+node_modules/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Databases and generated data
+*.db
+*.sqlite
+*.sqlite3
+backend/data/uploads/
+backend/data/processed/
+backend/data/temp/
+backend/data/area_debug/
+backend/data/*.db
+data/*.db
+
+# Large local datasets
+企业数据/
+图纸/
+样例/
+
+# Logs and runtime files
+*.log
+logs/
+tmp/
+temp/
+tmp_*.py
+*_test_*.py
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local agent metadata
+.omc/
